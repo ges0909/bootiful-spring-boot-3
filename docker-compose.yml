@@ -4,8 +4,8 @@ services:
   postgres:
     image: postgres:15.2
     environment:
-      - POSTGRES_DB=bp
-      - POSTGRES_USER=bp
-      - POSTGRES_PASSWORD=bp
+      - POSTGRES_DB=test_db
+      - POSTGRES_USER=test_user
+      - POSTGRES_PASSWORD=test_password
     ports:
       - "5432:5432"

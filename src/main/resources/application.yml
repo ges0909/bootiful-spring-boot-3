@@ -1,2 +1,12 @@
 spring.sql.init.mode: always
 spring.docker.compose.lifecycle-management: start_and_stop
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test_db?currentSchema=test_schema
+    username: test_user
+    password: test_password
+    driver-class-name: org.postgresql.Driver
+
+flyway:
+  schemas: [test_schema]
