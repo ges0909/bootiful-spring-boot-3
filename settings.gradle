@@ -4,4 +4,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'gofastwithspringboot31'
+rootProject.name = 'bootiful-spring-boot-3'

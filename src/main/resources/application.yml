@@ -7,6 +7,23 @@ spring:
     username: test_user
     password: test_password
     driver-class-name: org.postgresql.Driver
+  ai:
+    openai:
+      api-key: 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
+      model: gpt-3.5-turbo
 
 flyway:
+  baselineOnMigrate: true
+  # locations: classpath:db/migration
   schemas: [test_schema]
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true

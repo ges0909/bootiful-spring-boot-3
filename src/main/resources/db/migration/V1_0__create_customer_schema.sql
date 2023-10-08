@@ -1,4 +1,6 @@
-CREATE TABLE test_schema.customer (
+CREATE SCHEMA IF NOT EXISTS test_schema;
+
+CREATE TABLE IF NOT EXISTS test_schema.customer (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL
 );
