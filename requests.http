@@ -5,5 +5,9 @@ GET http://localhost:8080/customers
 GEThttp://localhost:8080/customers/Gerrit
 
 ###
-
 GET http://localhost:8080/customers/Unbekannt
+
+### Gateway
+
+###
+GET http://localhost:9999/proxy

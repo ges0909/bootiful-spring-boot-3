@@ -1,4 +1,4 @@
-package com.valantic.sti.gofastwithspringboot31;
+package com.valantic.sti;
 
 import org.springframework.ai.client.*;
 import org.springframework.boot.SpringApplication;
