@@ -10,6 +10,7 @@
 - [Multi-project build](https://docs.gradle.org/current/userguide/multi_project_builds.html)
 - `.\gradlew -q projects`
 - `.\gradlew -q bootRun`
+- `.\gradlew nativeCompile`
 
 # Spring History
 
