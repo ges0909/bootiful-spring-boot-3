@@ -19,6 +19,7 @@
 ## Database
 
 1.`docker compose up -d`
+
 1. Datenbank in Spring Boot populieren mit:
     - `resources/schema.sql`
     - `resources/data.sql`
@@ -31,6 +32,10 @@
 - http://localhost:8080/actuator/metrics
 - http://localhost:8080/actuator/metrics/by-name
 
-# AI Client
+## AI Client
 
 - http://localhost:8080/joke
+
+## GraalVM
+
+- [Download and install](https://www.graalvm.org/downloads/#)

@@ -1,17 +1,17 @@
 package com.valantic.sti;
 
-import org.springframework.boot.ApplicationRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.gateway.route.RouteLocator;
-import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
-import org.springframework.context.annotation.Bean;
-import org.springframework.http.HttpHeaders;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.reactive.function.client.WebClient;
-import org.springframework.web.reactive.function.client.support.WebClientAdapter;
-import org.springframework.web.service.annotation.GetExchange;
-import org.springframework.web.service.invoker.HttpServiceProxyFactory;
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.cloud.gateway.route.*;
+import org.springframework.cloud.gateway.route.builder.*;
+import org.springframework.context.annotation.*;
+import org.springframework.http.*;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.reactive.function.client.*;
+import org.springframework.web.reactive.function.client.support.*;
+import org.springframework.web.service.annotation.*;
+import org.springframework.web.service.invoker.*;
+
 import reactor.core.publisher.Flux;
 
 @SpringBootApplication
