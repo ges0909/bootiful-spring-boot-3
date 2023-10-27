@@ -1,19 +1,23 @@
-package com.valantic.sti;
-
-import org.springframework.ai.client.*;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.repository.*;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
+package com.valantic;
 
 import java.util.Collection;
 import java.util.Optional;
 
+import org.springframework.ai.client.*;
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.data.annotation.*;
+import org.springframework.data.repository.*;
+import org.springframework.http.*;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.*;
+
 import io.micrometer.observation.Observation;
 import io.micrometer.observation.ObservationRegistry;
+
+interface CustomerRepository extends ListCrudRepository<Customer, Long> {
+    Optional<Customer> findByName(final String name);
+}
 
 @SpringBootApplication
 public class BootifulSpringBoot3Application {
@@ -66,10 +70,6 @@ class CustomerController {
                         .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Customer '" + name + "' not found"))
                 );
     }
-}
-
-interface CustomerRepository extends ListCrudRepository<Customer, Long> {
-    Optional<Customer> findByName(final String name);
 }
 
 record Customer(@Id Long id, String name) {

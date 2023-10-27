@@ -1,4 +1,4 @@
-package com.valantic.sti;
+package com.valantic;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;

@@ -6,7 +6,7 @@ plugins {
     id 'org.flywaydb.flyway' version '9.22.1'
 }
 
-group = 'com.valantic.sti'
+group = 'com.valantic'
 version = '0.0.1-SNAPSHOT'
 
 java {
